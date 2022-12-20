@@ -1,0 +1,13 @@
+#yt-dlp config
+
+#path to save videos
+-P /media/amelie/My\ Passport/fun/Video/Youtube
+
+#get subs
+--write-auto-subs
+
+#write .info.json
+--write-info-json
+
+#embed subs and meta data
+--embed-subs --embed metadata
