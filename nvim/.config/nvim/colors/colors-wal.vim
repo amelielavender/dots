@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/media/amelie/My Passport/saved images/wallpaper decor/pink flowers wallpaper.png"
+let background = "#34271f"
+let foreground = "#e3dfdf"
+let cursor     = "#e3dfdf"
+
+" Colors
+let color0  = "#34271f"
+let color1  = "#B89293"
+let color2  = "#C88F92"
+let color3  = "#CDA0A1"
+let color4  = "#CEAFB2"
+let color5  = "#DEC8B2"
+let color6  = "#D4BDC2"
+let color7  = "#e3dfdf"
+let color8  = "#9e9c9c"
+let color9  = "#B89293"
+let color10 = "#C88F92"
+let color11 = "#CDA0A1"
+let color12 = "#CEAFB2"
+let color13 = "#DEC8B2"
+let color14 = "#D4BDC2"
+let color15 = "#e3dfdf"
