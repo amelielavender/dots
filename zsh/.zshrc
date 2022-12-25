@@ -88,6 +88,8 @@ source $ZSH/oh-my-zsh.sh
    export EDITOR='nano'
  fi
 
+ (cat ~/.cache/wal/sequences &)
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 

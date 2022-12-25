@@ -7,4 +7,4 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
-EDITOR=nvim
+export EDITOR=nvim
