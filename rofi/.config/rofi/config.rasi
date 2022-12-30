@@ -1,11 +1,11 @@
 configuration {
-/*	modi: "window,run,ssh";*/
+	modi: "window,run,ssh,combi";
 	font: "Atikinson Hyperlegible 14";
 /*	location: 0;*/
-/*	yoffset: 0;*/
+	yoffset: -500;
 /*	xoffset: 0;*/
-/*	fixed-num-lines: true;*/
-	show-icons: false;
+	fixed-num-lines: false;
+	show-icons: true;
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
@@ -15,7 +15,7 @@ configuration {
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
-/*	drun-match-fields: "name,generic,exec,categories,keywords";*/
+	drun-match-fields: "name,generic,exec,categories,keywords";
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
 /*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
@@ -32,7 +32,7 @@ configuration {
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
 /*	parse-known-hosts: true;*/
-/*	combi-modi: "window,run";*/
+	combi-modi: "drun,window,run";
 /*	matching: "normal";*/
 /*	tokenize: true;*/
 /*	m: "-5";*/
@@ -42,7 +42,6 @@ configuration {
 /*	scroll-method: 0;*/
 /*	window-format: "{w}    {c}   {t}";*/
 /*	click-to-exit: true;*/
-/*	theme: ;*/
 /*	max-history-size: 25;*/
 /*	combi-hide-mode-prefix: false;*/
 /*	matching-negate-char: '-' /* unsupported */;*/
@@ -59,7 +58,7 @@ configuration {
 /*	display-run: ;*/
 /*	display-ssh: ;*/
 /*	display-drun: ;*/
-/*	display-combi: ;*/
+	display-combi: "";
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
 /*	kb-primary-paste: "Control+V,Shift+Insert";*/
@@ -145,14 +144,40 @@ configuration {
       sorting-method:    "name";
   }
 }
+
 /* Dark theme. */
 @import "~/.cache/wal/colors-rofi-dark"
 
-element-icon {
-  size: 2.5em;
+element {
+    margin: 10 0;
 }
-
 element-text {
     vertical-align: 0.5;
 }
+window {
+    location: center;
+    anchor: north;
+    padding: 15;
+    border: 1px;
+    border-color: var(foreground);
+    border-radius: 30;
+}
+entry {
+    border: 0 0 2px 0;
+    border-color: var(foreground);
+}
+entry, prompt {
+    padding: 20px 20px 5px 20px;
+    font: "Caskaydia Cove Nerd Font Mono 30"; 
+}
+textbox-prompt-colon {
+    margin:     0;
+    expand:     false;
+    str:        "";
+}
+listview {
+    margin: 20 0 0 0;
+    padding: 20;
+}
+
 /* vim:ft=css
