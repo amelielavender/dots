@@ -35,6 +35,12 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+# personal startup specific to my i3 session
+exec_always --no-startup-id ~/dots/polybar/.config/polybar/launch.sh
+exec_always --no-startup-id ~/dots/wacom.sh
+exec_always --no-startup-id picom
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -55,7 +61,7 @@ bindsym $mod+t exec alacritty
 bindsym $mod+b exec vivaldi-stable
 
 # start file browser
-bindsym $mod+f exec nautilus
+bindsym $mod+Shift+f exec nautilus
 
 # kill focused window. default is $mod+Shift+q
 bindsym $mod+q kill
@@ -100,7 +106,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym L1 fullscreen toggle
+bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -121,8 +127,8 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: Browser"
-set $ws2 "2: Terminal"
+set $ws1 "1"
+set $ws2 "2"
 set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
@@ -230,17 +236,3 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 default_border none
-
-# personal startup specific to my i3 session
-exec_always --no-startup-id ~/dots/polybar/.config/polybar/launch.sh
-exec_always --no-startup-id ~/dots/wacom.sh
-exec_always --no-startup-id picom
-exec --no-startup-id ~/dots/xrandr.sh
-
-# assignments
-assign [class="clipstudiopaint"] $ws5 
-assign [class="vivaldi-stable"] $ws1
-assign [class="Alacritty"] $ws2
-
-# keybind additions
-bindsym $mod+Shift+s exec --no-startup-id maim -l -s | tee ~/Pictures/Screenshots/Screenshot_"$(date +%c)".png | xclip -selection clipboard -t image/png 
