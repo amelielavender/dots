@@ -45,7 +45,7 @@ border-top-size = 0
 border-color = #00000000
 
 padding-left = 1 
-padding-right = 1
+padding-right = 2
 
 module-margin = 1
 
@@ -64,7 +64,7 @@ cursor-scroll = ns-resize
 
 enable-ipc = true
 
-; tray-position = right
+; tray-position = 
 
 ; wm-restack = generic
 ; wm-restack = bspwm
@@ -165,6 +165,4 @@ label-foreground = ${colors.primary}
 screenchange-reload = true
 pseudo-transparency = true
 
-[global/wm]
-margin-bottom = 0
 ; vim:ft=dosini
