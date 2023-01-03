@@ -1,6 +1,6 @@
 configuration {
 	modi: "window,run,ssh,combi";
-	font: "Atikinson Hyperlegible 14";
+    font: "Caskaydia Cove Nerd Font Mono 16"; 
 /*	location: 0;*/
 	yoffset: -500;
 /*	xoffset: 0;*/
@@ -148,12 +148,6 @@ configuration {
 /* Dark theme. */
 @import "~/.cache/wal/colors-rofi-dark"
 
-element {
-    margin: 10 0;
-}
-element-text {
-    vertical-align: 0.5;
-}
 window {
     location: center;
     anchor: north;
@@ -161,6 +155,7 @@ window {
     border: 1px;
     border-color: var(foreground);
     border-radius: 30;
+    width: 20em;
 }
 entry {
     border: 0 0 2px 0;
@@ -168,7 +163,17 @@ entry {
 }
 entry, prompt {
     padding: 20px 20px 5px 20px;
-    font: "Caskaydia Cove Nerd Font Mono 30"; 
+    font: "Caskaydia Cove Nerd Font Mono 30";
+    placeholder-color: #CDA0A2;
+}
+prompt {
+    text-color: #CDA0A2;
+}
+element {
+    padding: 20;
+    border-radius: 30;
+    spacing: 20px;
+    children: [ element-icon, element-text ];
 }
 textbox-prompt-colon {
     margin:     0;
@@ -178,6 +183,13 @@ textbox-prompt-colon {
 listview {
     margin: 20 0 0 0;
     padding: 20;
+    lines: 5;
+    scrollbar: false;
 }
-
+element-icon {
+    size: 2em;
+}
+element-text {
+    vertical-align: 0.5;
+}
 /* vim:ft=css

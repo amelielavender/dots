@@ -29,12 +29,9 @@ let g:airline_theme = 'monochrome'
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
-colorscheme colors-wal
-
 set number
 syntax on
 set title
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set termguicolors
