@@ -146,7 +146,7 @@ configuration {
 }
 
 /* Dark theme. */
-@import "~/.cache/wal/colors-rofi-dark"
+/* @import "~/.cache/wal/colors-rofi-dark" */
 
 window {
     location: center;
@@ -193,3 +193,4 @@ element-text {
     vertical-align: 0.5;
 }
 /* vim:ft=css
+@theme "/usr/share/rofi/themes/Paper.rasi"
