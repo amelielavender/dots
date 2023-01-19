@@ -2,13 +2,16 @@
 #needs to be restarted if you unplug and replug the device.
 #see https://github.com/linuxwacom/xf86-input-wacom/wiki/xorg.conf.d for a hotplug configuration
 
+#get name of devices from `xsetwacom list`
 TAB="Wacom Cintiq Pro 13"
 
-PEN="$TAB Pen stylus" #get name of devices from `xsetwacom list`
+PEN="$TAB Pen stylus"
 PAD="$TAB Pad pad"
 ERASER="$TAB Pen eraser"
+TOUCH="$TAB Touch Finger touch"
 
-MONITOR="HEAD-1" #for nvidia gpus, need to use HEAD-0, HEAD-1 as display names instead of the name under xrandr. just headass tbh
+#for nvidia gpus, need to use HEAD-0, HEAD-1 as display names instead of the name under xrandr. just headass tbh
+MONITOR="HEAD-1"
 
 #pen
 xsetwacom set "$PEN" MapToOutput $MONITOR 
@@ -20,7 +23,7 @@ xsetwacom set "$ERASER" MapToOutput $MONITOR
 xsetwacom set "$ERASER" Button 2 3
 xsetwacom set "$ERASER" Button 3 2
 
-#tablet
-xsetwacom set "$PAD" touch off
+#touch
+xsetwacom set "$TOUCH" touch off
 
 echo "settings applied"
