@@ -1,5 +1,16 @@
- mpd_music_dir = "~/Music"
- lyrics_directory  = ~/.config/ncmpcpp/lyrics
- ncmpcpp_directory  = ~/.config/ncmpcpp
- mpd_host = "localhost"
- mpd_port = "6600"
+# directories
+mpd_music_dir = "~/Music"
+lyrics_directory  = ~/.config/ncmpcpp/lyrics
+ncmpcpp_directory  = ~/.config/ncmpcpp
+
+# network
+mpd_host = "localhost"
+mpd_port = "6600"
+
+# general
+startup_screen = browser
+ignore_diacritics = yes
+external_editor = nvim
+
+# appearance
+progressbar_look = "─╼─"

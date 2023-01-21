@@ -19,6 +19,7 @@ export LANG=en_US.UTF-8
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+export MAKEFLAGS="-j8"
 
 #wal
 (cat ~/.cache/wal/sequences &)
