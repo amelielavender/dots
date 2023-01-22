@@ -54,17 +54,17 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 20
+    padding = 10
 
     # Horizontal padding.
-    horizontal_padding = 20
+    horizontal_padding = 10
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 1
+    frame_width = 0
 
     # Defines color of the frame around the notification window.
-    frame_color = "#87605a"
+    frame_color = "#b67979"
 
     # Define a color for the separator.
     # possible values are:
@@ -72,7 +72,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = frame
+    separator_color = auto
 
     # Sort messages by urgency.
     sort = yes
@@ -130,7 +130,7 @@
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = center 
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
@@ -222,7 +222,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 30
+    corner_radius = 5
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -299,7 +299,7 @@
     #icon = /path/to/icon
 
 [urgency_normal]
-    background = "#f0d2d4"
+    background = "#ffdfdf"
     foreground = "#34271f"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable

@@ -11,5 +11,3 @@ export PLUGINS="$HOME/dots/zsh/plugins"
 export BROWSER=vivaldi-stable
 export TERMINAL=Alacritty
 export EDITOR=nvim
-export GDK_DPI_SCALE=0.5 
-export GDK_SCALE=2.0
