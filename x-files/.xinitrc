@@ -12,4 +12,6 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
+/usr/bin/polkit-dumb-agent &
+
 exec i3
