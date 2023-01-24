@@ -5,6 +5,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 # completion
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 #aliases
 source $HOME/dots/zsh/.zsh_aliases
