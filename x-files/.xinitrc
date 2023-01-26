@@ -2,7 +2,7 @@
 
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
-
+export GTK_THEME=Catppuccin-Latte-Standard-Flamingo-Light
 userresources="$HOME/.Xresources"
 
 $HOME/dots/xrandr.sh &
