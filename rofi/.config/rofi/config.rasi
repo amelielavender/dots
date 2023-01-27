@@ -175,6 +175,9 @@ element {
     spacing: 20px;
     children: [ element-icon, element-text ];
 }
+element-text selected {
+    color: var(background);
+}
 textbox-prompt-colon {
     margin:     0;
     expand:     false;
