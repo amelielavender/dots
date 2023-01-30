@@ -2,7 +2,6 @@
 -- ~/.config/nvim/init.lua --
 --                         --
 
-require('user.plugins')
 
 -- line numbers
 vim.opt.number = true
@@ -16,10 +15,13 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- colors
-vim.opt.termguicolors = true
+vim.o.termguicolors = true
 -- im definitely going to forget to change this when needed arent i
 vim.opt.background = 'light'
 
 -- not in my original but i liked it so i stole it 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+require('user.plugins')
+require('feline').setup()
