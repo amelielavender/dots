@@ -18,9 +18,12 @@ source $PLUGINS/zsh-you-should-use/you-should-use.plugin.zsh
 #locale
 export LANG=en_US.UTF-8
 
-# Compilation flags
+#Compilation flags
 export ARCHFLAGS="-arch x86_64"
 export MAKEFLAGS="-j8"
+
+#fzf opts
+export FZF_DEFAULT_OPTS='--height 40% --color=light --layout=reverse'
 
 #wal
 (cat ~/.cache/wal/sequences &)
@@ -38,3 +41,5 @@ current_git_branch() {
 }
 
 PS1='%B%n@%m%b %0~ $(current_git_branch)✿ '
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -1,10 +1,11 @@
 alias ytd='yt-dlp '
+alias music='ncmpcpp'
 alias zshrc='nvim ~/dots/zsh/.zshrc'
 alias alacrittycfg='nvim ~/dots/alacritty/.config/alacritty/alacritty.yml'
 alias vi=nvim
 alias picomcfg='nvim ~/dots/picom/.config/picom/picom.conf'
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
-
+alias todoist='todoist-cli'
 #git
 alias gi='git init'
 alias gst='git status'

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/media/garden/saved images/wallpaper decor/pink flowers edited.png",
+    "alpha": "100",
+    "special": {
+        "background": "#23373c",
+        "foreground": "#d9d0da",
+        "cursor": "#d9d0da"
+    },
+    "colors": {
+        "color0": "#23373c",
+        "color1": "#B08995",
+        "color2": "#B797AA",
+        "color3": "#BAA4B7",
+        "color4": "#C39CA4",
+        "color5": "#C5A9B5",
+        "color6": "#BBB1C6",
+        "color7": "#d9d0da",
+        "color8": "#979198",
+        "color9": "#B08995",
+        "color10": "#B797AA",
+        "color11": "#BAA4B7",
+        "color12": "#C39CA4",
+        "color13": "#C5A9B5",
+        "color14": "#BBB1C6",
+        "color15": "#d9d0da"
+    }
+}
