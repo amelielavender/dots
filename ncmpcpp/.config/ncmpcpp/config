@@ -8,9 +8,16 @@ mpd_host = "localhost"
 mpd_port = "6600"
 
 # general
-startup_screen = browser
+startup_screen = playlist
 ignore_diacritics = yes
 external_editor = nvim
 
 # appearance
-progressbar_look = "─╼─"
+progressbar_look = "──"
+
+# visualizer
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+visualizer_type = "ellipse"
+visualizer_look = "●▮"

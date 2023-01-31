@@ -15,6 +15,7 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
+$HOME/.fehbg
 udiskie &
 /usr/bin/polkit-dumb-agent &
 
