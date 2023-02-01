@@ -3,7 +3,7 @@
 --                         --
 
 -- line numbers
-vim.opt.number = true
+vim.cmd('set number relativenumber')
 
 -- lets vim set title of current window
 vim.opt.title = true
