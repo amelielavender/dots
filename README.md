@@ -21,3 +21,6 @@ helpful
 
 - pywal
 - terminal.sexy
+
+<img src="/assets/1.png">
+<img src="/assets/2.png">
