@@ -4,7 +4,7 @@ time=$(date +%F_%H_%M_%S)
 
 # take screenshot of selection, or window copy it to file and clipboard
 Sel () {
-  if  maim -q -s --bordersize=9999 --color=0,0,0,100 /tmp/selcap.png ; then
+  if  maim -q -u -s --bordersize=9999 --color=0,0,0,100 /tmp/selcap.png ; then
     xclip -selection clipboard -t image/png /tmp/selcap.png
     mv /tmp/selcap.png ~/Pictures/Screenshots/Screenshot_$time.png && dunstify -a maim "screenshot saved"
   else
@@ -15,7 +15,7 @@ Sel () {
 # take screenshot of desktop, copy it to file and clipboard
 # my main monitor is 4k so change the geometry as needed
 Desktop () {
-  if maim -q -g 3840x2160-0+0 /tmp/desktop.png ; then
+  if maim -q -u -g 3840x2160-0+0 /tmp/desktop.png ; then
     xclip -selection clipboard -t image/png /tmp/desktop.png
     mv /tmp/desktop.png ~/Pictures/Screenshots/Desktop_$time.png && dunstify -a maim "desktop captured"
   else
