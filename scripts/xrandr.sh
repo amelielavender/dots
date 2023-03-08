@@ -1,6 +1,8 @@
 #!/bin/sh
 
-xrandr --output DP-0 --primary
-xrandr --output DP-2 --right-of DP-0
-xrandr --output DP-2 --scale 2x2
+dell=DP-4
+wacom=DP-2
 
+xrandr --output $dell --primary
+xrandr --output $dell --right-of $wacom
+xrandr --output $wacom --scale 2x2
