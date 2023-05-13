@@ -1,1 +1,7 @@
 vim.cmd 'hi Comment gui=italic'
+vim.cmd 'hi TermCursor guifg=#e6caca'
+vim.cmd 'hi TermCursorNC guifg=#e6caca'
+vim.cmd 'hi Visual guibg=#cca5b1'
+vim.cmd 'hi IncSearch guifg=#e6caca'
+vim.cmd 'hi Search guifg=#e6caca'
+vim.cmd 'hi Colorcolumn guibg=#cca5b1'

@@ -1,4 +1,5 @@
 flowetch
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH:$HOME/.local/bin
 
@@ -24,6 +25,7 @@ export MAKEFLAGS="-j8"
 
 #fzf opts
 export FZF_DEFAULT_OPTS='--height 40% --color=light --layout=reverse'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #wal
 (cat ~/.cache/wal/sequences &)
@@ -41,5 +43,3 @@ current_git_branch() {
 }
 
 PS1='%B%n@%m%b %0~ $(current_git_branch)✿ '
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

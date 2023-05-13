@@ -2,8 +2,10 @@
 --     s e t t i n g s     --
 --                         --
 
--- line numbers
+-- line numbers, wrapping, navigation
 vim.cmd('set number relativenumber')
+vim.wo.wrap = true
+vim.wo.linebreak = true
 
 -- lets vim set title of current window
 vim.opt.title = true
@@ -16,9 +18,9 @@ vim.opt.expandtab = true
 -- colors
 vim.opt.termguicolors = true
 
--- im definitely going to forget to change this when needed 
+-- tell vim i'm using a light-colored bg
 vim.opt.background = 'light'
 
--- not in my original but i liked it so i stole it 
+-- splits to the right and below 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
