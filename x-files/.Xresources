@@ -1,3 +1,9 @@
-Xft.dpi: 192
-Xcursor.size: 72
-Xcursor.theme: Bibata-Modern-Classic
+Xft.dpi:       192 
+Xft.antialias: true
+Xft.hinting:   true
+Xft.autohint:  false
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.rgba:      rgb
+Xcursor.size:  72
+Xcursor.theme: Bibiata-Modern-Classic
