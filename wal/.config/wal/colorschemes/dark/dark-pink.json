@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/media/garden/saved images/wallpaper decor/pink-pine-mountain/wallpaper.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#212128",
+        "foreground": "#f0e3e2",
+        "cursor": "#f0e3e2"
+    },
+    "colors": {
+        "color0": "#212128",
+        "color1": "#A79297",
+        "color2": "#B89397",
+        "color3": "#C39C9F",
+        "color4": "#D3B3B4",
+        "color5": "#DDBFC0",
+        "color6": "#EDD3D2",
+        "color7": "#f0e3e2",
+        "color8": "#a89e9e",
+        "color9": "#A79297",
+        "color10": "#B89397",
+        "color11": "#C39C9F",
+        "color12": "#D3B3B4",
+        "color13": "#DDBFC0",
+        "color14": "#EDD3D2",
+        "color15": "#f0e3e2"
+    }
+}
