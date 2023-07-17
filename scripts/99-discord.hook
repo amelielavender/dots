@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = discord 
+
+[Action]
+Description = Moving app.asar...
+When = PostTransaction
+Exec = /usr/bin/cp ~/app.asar /opt/discord/resources/ 
