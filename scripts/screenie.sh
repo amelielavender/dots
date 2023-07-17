@@ -34,7 +34,7 @@ recordSel () {
     width=${#W}
     if [ $width -gt 0 ] ; then
       dunstify -a ffmpeg "started recording"
-      ffmpeg -f alsa -i pipewire -f x11grab -s "$W"x"$H" -framerate 60 -thread_queue_size 512 -i $DISPLAY.0+$X,$Y -vcodec libx264 -qp 18 -preset ultrafast ~/Videos/Screencasts/Recording_$time.mp4
+      ffmpeg -f alsa -i pipewire -f x11grab -s "$W"x"$H" -framerate 60 -thread_queue_size 512 -i $DISPLAY.0+$X,$Y -vcodec h264_nvenc -qp 18 ~/Videos/Screencasts/Recording_$time.mp4
     fi
   fi
 }
