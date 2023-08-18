@@ -2,7 +2,9 @@
 
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
-export GTK_THEME=Catppuccin-Latte-Standard-Flamingo-Light
+export GTK_THEME=rose-pine-gtk
+export QT_STYLE_OVERRIDE=kvantum
+
 userresources="$HOME/.Xresources"
 
 $HOME/.screenlayout/test.sh &

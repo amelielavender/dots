@@ -10,6 +10,4 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export PLUGINS="$HOME/dots/zsh/plugins"
 export GOPATH="$XDG_DATA_HOME"/go
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
-export BROWSER=vivaldi-stable
-export TERMINAL=Alacritty
-export EDITOR=nvim
+export EDITOR="/usr/bin/nvim"
