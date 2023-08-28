@@ -25,7 +25,6 @@ export MAKEFLAGS="-j8"
 
 #fzf opts
 export FZF_DEFAULT_OPTS='--height 40% --color=light --layout=reverse'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #wal
 (cat ~/.cache/wal/sequences &)
@@ -43,3 +42,5 @@ current_git_branch() {
 }
 
 PS1='%B%n@%m%b %0~ $(current_git_branch)✿ '
+
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh

@@ -1,5 +1,6 @@
 #!/bin/sh
 
+export WINEPREFIX="$XDG_DATA_HOME"/wine
 export GDK_SCALE=2
 export GDK_DPI_SCALE=0.5
 export GTK_THEME=rose-pine-gtk
@@ -17,7 +18,7 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"
 fi
 
-$HOME/.fehbg
+$HOME/dots/scripts/.fehbg
 udiskie &
 polkit-dumb-agent &
 systemctl --user start autostart.target

@@ -4,6 +4,7 @@
 
 -- line numbers, wrapping, navigation
 vim.cmd('set number relativenumber')
+vim.cmd('set colorcolumn=80')
 vim.wo.wrap = true
 vim.wo.linebreak = true
 
@@ -19,7 +20,7 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = true
 
 -- tell vim i'm using a light-colored bg
-vim.opt.background = 'light'
+-- vim.opt.background = 'light'
 
 -- splits to the right and below 
 vim.opt.splitright = true

@@ -5,7 +5,7 @@ alias alacrittycfg='nvim ~/dots/alacritty/.config/alacritty/alacritty.yml'
 alias vi=nvim
 alias picomcfg='nvim ~/dots/picom/.config/picom/picom.conf'
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
-alias todoist='todoist-cli'
+alias uppies='checkupdates'
 #git
 alias gi='git init'
 alias gst='git status'
