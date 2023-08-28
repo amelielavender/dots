@@ -19,6 +19,6 @@ fi
 
 $HOME/.fehbg
 udiskie &
-/usr/bin/polkit-dumb-agent &
-
+polkit-dumb-agent &
+systemctl --user start autostart.target
 exec i3
