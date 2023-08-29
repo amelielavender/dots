@@ -21,5 +21,4 @@ fi
 $HOME/dots/scripts/.fehbg
 udiskie &
 polkit-dumb-agent &
-systemctl --user start autostart.target
 exec i3
