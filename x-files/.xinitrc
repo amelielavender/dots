@@ -20,5 +20,4 @@ fi
 
 $HOME/dots/scripts/.fehbg
 udiskie &
-polkit-dumb-agent &
 exec i3

@@ -11,6 +11,9 @@ Plug 'NvChad/nvim-colorizer.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug('AlphaTechnolog/pywal.nvim', {as = 'pywal' })
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'ms-jpq/coq_nvim'
+Plug 'ms-jpq/coq.artifacts'
+Plug 'neovim/nvim-lspconfig'
 
 vim.call('plug#end')
 
@@ -21,3 +24,4 @@ require('lualine').setup({
 })
 
 require('pywal').setup()
+

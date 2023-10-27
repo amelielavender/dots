@@ -1,4 +1,4 @@
-alias ytd='yt-dlp '
+alias ytdl='yt-dlp '
 alias music='ncmpcpp'
 alias zshrc='nvim ~/dots/zsh/.zshrc'
 alias alacrittycfg='nvim ~/dots/alacritty/.config/alacritty/alacritty.yml'
