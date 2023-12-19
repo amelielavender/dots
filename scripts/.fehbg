@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/media/garden/saved images/wallpaper decor/2560x1440-pale-pink-solid-color-background.jpg' 
+feh --no-fehbg --bg-tile '/media/storage/Downloads/035_Clefairy_Pokemon_Shirts.png' 

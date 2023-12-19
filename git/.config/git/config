@@ -12,3 +12,5 @@
 [credential "https://gitlab.com"]
 	helper = 
 	helper = !/usr/bin/glab auth git-credential
+[safe]
+	directory = /media/garden/os app customizations/ansible-playbooks
