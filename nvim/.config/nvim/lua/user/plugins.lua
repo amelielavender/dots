@@ -13,8 +13,6 @@ Plug('AlphaTechnolog/pywal.nvim', {as = 'pywal' })
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'ms-jpq/coq_nvim'
 Plug 'ms-jpq/coq.artifacts'
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'neovim/nvim-lspconfig'
 
 vim.call('plug#end')
@@ -24,8 +22,6 @@ require('lualine').setup({
 })
 
 require('pywal').setup()
-require("mason").setup()
-require("mason-lspconfig").setup()
 
 require('colorizer').setup{
   filetypes = {
