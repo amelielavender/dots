@@ -1,3 +1,4 @@
+--  nvim/lua/user/plugins  --
 --                         --
 --     p l u g - i n s     --
 --                         --
@@ -14,6 +15,7 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'ms-jpq/coq_nvim'
 Plug 'ms-jpq/coq.artifacts'
 Plug 'neovim/nvim-lspconfig'
+Plug 'tpope/vim-vinegar'
 
 vim.call('plug#end')
 
@@ -27,5 +29,6 @@ require('colorizer').setup{
   filetypes = {
     'css',
     'javascript',
+    'json',
   },
 }
