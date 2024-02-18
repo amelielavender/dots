@@ -25,3 +25,7 @@ vim.opt.termguicolors = true
 -- splits to the right and below 
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+
+vim.g.coq_settings = {
+  auto_start = true,
+}
