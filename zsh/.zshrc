@@ -42,6 +42,6 @@ current_git_branch() {
 }
 
 PS1='%B%n@%m%b [%0~$(current_git_branch)]
-✿ '
+└─✿ '
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
