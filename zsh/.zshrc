@@ -37,7 +37,7 @@ setopt PROMPT_SUBST
 current_git_branch() {
   local BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
   if [[ -n ${BRANCH} ]] ; then
-    echo " ${BRANCH}"
+    echo "${BRANCH} "
   fi
 }
 

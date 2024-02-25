@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dell=DP-3
+dell=DP-4
 wacom=DP-2
 
 xrandr --output $dell --primary
