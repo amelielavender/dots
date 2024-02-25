@@ -10,6 +10,7 @@ vim.call('plug#begin', '~/.config/nvim/lua/plugins')
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'NvChad/nvim-colorizer.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug('AlphaTechnolog/pywal.nvim', {as = 'pywal' })
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'ms-jpq/coq_nvim'
