@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-tile '/media/storage/Downloads/035_Clefairy_Pokemon_Shirts.png' 
+feh --no-fehbg --bg-tile '/home/amelie/Downloads/035_Clefairy_Pokemon_Shirts.png' 
