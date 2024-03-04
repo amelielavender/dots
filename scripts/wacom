@@ -15,6 +15,8 @@ touch="$tab Touch Finger touch"
 #for nvidia gpus, need to use HEAD-0, HEAD-1 as display names instead of the name under xrandr. just headass tbh
 monitor="DisplayPort-1"
 
+# wait so systemd doesn't complain
+sleep 5
 #pen
 xsetwacom set "$pen" MapToOutput $monitor 
 xsetwacom set "$pen" Button 2 3
