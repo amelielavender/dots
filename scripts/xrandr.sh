@@ -1,7 +1,7 @@
 #!/bin/sh
 
-dell=DP-3
-wacom=DP-2
+dell  = DisplayPort-2
+wacom = DisplayPorP-1
 
 xrandr --output $dell --primary
 xrandr --output $dell --left-of $wacom
