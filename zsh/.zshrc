@@ -40,8 +40,7 @@ current_git_branch() {
     echo "${BRANCH} "
   fi
 }
-
-PS1='%B%n@%m%b [%0~$(current_git_branch)]
-└─✿ '
+PS1='%F{cyan}%B%n%b%f%F{black}@%m%f %F{white}[%~$(current_git_branch)]%f
+%F{black}└─✿%f '
 
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh ] && source "${XDG_CONFIG_HOME:-$HOME/.config}"/fzf/fzf.zsh
