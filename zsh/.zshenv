@@ -10,5 +10,6 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 export PLUGINS="$HOME/dots/zsh/plugins"
 export GOPATH="$XDG_DATA_HOME"/go
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export GTK_THEME=Adwaita:dark
 export EDITOR="/usr/bin/nvim"
 . "/home/amelie/.local/share/cargo/env"
