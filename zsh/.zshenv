@@ -12,4 +12,11 @@ export GOPATH="$XDG_DATA_HOME"/go
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export GTK_THEME=Adwaita:dark
 export EDITOR="/usr/bin/nvim"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export PYENV_ROOT="$XDG_DATA_HOME"/pyenv
+export PYTHONSTARTUP="/etc/python/pythonrc"
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
+export SQLITE_HISTORY="$XDG_CACHE_HOME"/sqlite_history
 . "/home/amelie/.local/share/cargo/env"
